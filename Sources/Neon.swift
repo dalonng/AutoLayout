@@ -7,23 +7,23 @@
 //
 
 #if os(iOS)
-    import UIKit
+  import UIKit
 #else
-    import Cocoa
+  import Cocoa
 #endif
 
-
 // MARK: AutoHeight
+
 //
 ///
 /// `CGFloat` constant used to specify that you want the height to be automatically calculated
 /// using `sizeToFit()`.
 ///
-public let AutoHeight : CGFloat = -1
-public let AutoWidth : CGFloat = -1
-
+public let AutoHeight: CGFloat = -1
+public let AutoWidth: CGFloat = -1
 
 // MARK: Corner
+
 //
 ///
 /// Specifies a corner of a frame.
@@ -37,14 +37,14 @@ public let AutoWidth : CGFloat = -1
 /// **bottomRight**: The upper-right corner of the frame.
 ///
 public enum Corner {
-    case topLeft
-    case topRight
-    case bottomLeft
-    case bottomRight
+  case topLeft
+  case topRight
+  case bottomLeft
+  case bottomRight
 }
 
-
 // MARK: Edge
+
 //
 ///
 /// Specifies an edge, or face, of a frame.
@@ -58,14 +58,14 @@ public enum Corner {
 /// **right**: The right edge of the frame.
 ///
 public enum Edge {
-    case top
-    case left
-    case bottom
-    case right
+  case top
+  case left
+  case bottom
+  case right
 }
 
-
 // MARK: Align Type
+
 //
 ///
 /// Specifies how a view will be aligned relative to the sibling view.
@@ -109,22 +109,22 @@ public enum Edge {
 /// the horizontal center of the sibling's frame or centered horizontally within the superview, depending on the context.
 ///
 public enum Align {
-    case toTheRightMatchingTop
-    case toTheRightMatchingBottom
-    case toTheRightCentered
-    case toTheLeftMatchingTop
-    case toTheLeftMatchingBottom
-    case toTheLeftCentered
-    case underMatchingLeft
-    case underMatchingRight
-    case underCentered
-    case aboveMatchingLeft
-    case aboveMatchingRight
-    case aboveCentered
+  case toTheRightMatchingTop
+  case toTheRightMatchingBottom
+  case toTheRightCentered
+  case toTheLeftMatchingTop
+  case toTheLeftMatchingBottom
+  case toTheLeftCentered
+  case underMatchingLeft
+  case underMatchingRight
+  case underCentered
+  case aboveMatchingLeft
+  case aboveMatchingRight
+  case aboveCentered
 }
 
-
 // MARK: Group Type
+
 //
 ///
 /// Specifies how a group will be laid out.
@@ -134,6 +134,6 @@ public enum Align {
 /// **vertical**: Specifies that the views should be aligned relative to eachother vertically.
 ///
 public enum Group {
-    case horizontal
-    case vertical
+  case horizontal
+  case vertical
 }
